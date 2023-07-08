@@ -30,15 +30,15 @@ The changes show from 1 to 5,where the lowest has 1 as poor,with the midpoint 3 
 There is no much difference between the quarters except that the average price in quarter 2 is slightly higher than the rest.There are columns in the dataset that may not be useful in evaluation and we drop them by initializing the list called dropped and then dropping thm from our dataset<img src = images2\output1.png>
 
  A majority of the price distributions lie between 0 and 1.2 million with those beyond this considered as outliers. On the other hand, we consider these prices to be important for our analysis except those above 5 million that we considered as
-genuine outliers which we will drop<img src = output2.png >
+genuine outliers which we will drop<img src = images2\output2.png >
 
  The column 'grade' is split for its values and only the first section is singled out to be converted into numeric type and used as a scale for measuring the grade of the houses / properties Shifting has been done so that the grading parameters may start from 1. From 1 to 11, where the lowest has 1 as poor, with a midpoint of 7 as average and the highest being 11 as mansion
 
  Modelling
-  There is a very high correlation between the predictor columns of'sqft_above', 'sqft_living', 'sqft_living15, 'grade',and 'bathrooms'. Dropping some of these will eliminate multicollinearity features. The columns to drop will be 'sqft_above', 'sqft_living15', 'grade',and 'bathrooms'<img src = output3.png>
+  There is a very high correlation between the predictor columns of'sqft_above', 'sqft_living', 'sqft_living15, 'grade',and 'bathrooms'. Dropping some of these will eliminate multicollinearity features. The columns to drop will be 'sqft_above', 'sqft_living15', 'grade',and 'bathrooms'<img src = images2\output3.png>
 
   The model is generally statistically sigmificant at a significance level of with a _value of 0.0, and explains about 49% of the variance in price.The constant and coefficient are statistically significant. For a unit increase in square-foot living area, we see an associated increase in 275 dollars in selling price of the
-houses.<img src = output4.png>
+houses.<img src = images2\output4.png>
 
 The centred model is statistically significant as standard alpha of 0.05 being 0.0, and still explains 58% of the variance in sale price.The centred model still explains the same amount of variance as the multiple model.The model coefficients are statistically significant except for "sqft_lot".The constant here explains that for an average house that is not renovated, with no waterfront and built since
 1900, we would have a sale price of 711,600 dollars.
@@ -48,7 +48,7 @@ log transformations did not assist in improving improving the model. The adjuste
 
 
 Standard Errors assume that the covariance matrix of the errors is correctly specified.The condition number is large, 5.47e+06. This might indicate that there are
-strong multicollinearity or other numerical problems.<img src = output5.png>
+strong multicollinearity or other numerical problems.<img src = images2\output5.png>
 
 Findings
 * The multiple linear regression model has an R-squared value of 0.79, which indicates that the model can explain 79% of the variance of the market
